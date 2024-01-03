@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" ; />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" id="anasayfa" class="active-a">ANASAYFA</a></li>
+                    <li><a href="#">HAKKIMIZDA</a></li>
+                    <li onclick="menuOpen()" class="lezzet">
+                        <a href="#" id="lezzet" class="text-center">
+                            LEZZETLERİMİZ
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">İLETİŞİM</a></li>
+                    <li><a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="" class="language-icon"><img src="img/language-icon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="menuler" class="container-relative deactive">
+        <div id="hamburger-menu">
+            <div id="menuler1">
+                <div>
+                    <div class="menu1">
+                        <img class="hamburger-img" src="img/hamburger.png" alt="">
+                    </div>
+                    <div class="text-center white-text small-text menu-text">Menu 1</div>
+                </div>
+                <div>
+                    <div class="menu1">
+                        <img class="hamburger-img" src="img/hamburger.png" alt="">
+                    </div>
+                    <div class="text-center white-text small-text menu-text">Menu 2</div>
+                </div>
+                <div>
+                    <div class="menu1">
+                        <img class="hamburger-img" src="img/hamburger.png" alt="">
+                    </div>
+                    <div class="text-center white-text small-text menu-text">Menu 3</div>
+                </div>
+                <div>
+                    <div class="menu1">
+                        <img class="hamburger-img" src="img/hamburger.png" alt="">
+                    </div>
+                    <div class="text-center white-text small-text menu-text">Menu 4</div>
+                </div>
+                <div>
+                    <div class="menu1">
+                        <img class="hamburger-img" src="img/hamburger.png" alt="">
+                    </div>
+                    <div class="text-center white-text small-text menu-text">Menu 5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-absolute2">
+        <a href="#">
+            <div class="siparis">
+                <img class="sol-ok-icon" src="img/sol-ok-icon.png" alt="">
+                <img class="scooter-icon" src="img/scooter-icon.png" alt="">
+            </div>
+            <div class="container-absolute2-yazilar">
+                <div class="hemen">Hemen</div>
+                <div class="siparis-ver">Sipariş Ver</div>
+                <div class="phone-number">+90 (123) 456 789</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="slick background">
+        <div>
+            <div class="container-relative">
+                <div class="container-absolute hamburger-container">
+                    <div>
+                        <div class="hamburger-yazilari">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .85;">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .7;">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .55;">HAMBURGER</div>
+                    </div>
+                </div>
+                <div class="container-absolute">
+                    <img class="el-hamburger" src="img/el-hamburger.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="container">
+                    <div class="div-1-text">
+                        <div>
+                            <div class="yellow-text small-text">
+                                En Çok Satılan
+                            </div>
+                            <div class="red-text mid-text">
+                                SUPER
+                            </div>
+                            <div class="white-text big-text">
+                                BURGER
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container-relative">
+                <div class="container-absolute3">
+                    <img class="cheese-burger" src="img/cheese-burger.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="container">
+                    <div class="div-1-text">
+                        <div>
+                            <div class="white-text small-text">
+                                En Popüler
+                            </div>
+                            <div class="yellow-text big-text">
+                                Cheese
+                            </div>
+                            <div class="white-text big-text">
+                                Burger
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container-relative">
+                <div class="container-absolute hamburger-container">
+                    <div>
+                        <div class="hamburger-yazilari">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .85;">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .7;">HAMBURGER</div>
+                        <div class="hamburger-yazilari" style="opacity: .55;">HAMBURGER</div>
+                    </div>
+                </div>
+                <div class="container-absolute">
+                    <img class="el-hamburger" src="img/el-hamburger.png" alt="">
+                </div>
+
+
+            </div>
+
+            <div>
+                <div class="container">
+                    <div class="div-1-text">
+                        <div>
+                            <div class="yellow-text small-text">
+                                En Çok Satılan
+                            </div>
+                            <div class="red-text mid-text">
+                                SUPER
+                            </div>
+                            <div class="white-text big-text">
+                                BURGER
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="special-burgers">
+            <div class="background-red special-flex">
+                <div class="special-text">
+                    <div class="white-text">Special Cheese Burger</div>
+                    <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
+                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                </div>
+                <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
+            </div>
+            <div class="background-yellow special-flex">
+                <div class="special-text">
+                    <div class="white-text">Special Cheese Burger</div>
+                    <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
+                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                </div>
+                <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
+            </div>
+            <div class="background-green special-flex">
+                <div class="special-text">
+                    <div class="white-text">Special Cheese Burger</div>
+                    <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
+                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                </div>
+                <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="images">
+        <div class="images-icerik">
+            <img class="restorant" src="img/menu.png" alt="">
+        </div>
+        <div class="images-icerik">
+            <div class="kampanya">
+                <h1>Kampanyalı Ürünler</h1>
+
+                <div class="images-minik">
+                    <img src="img/minik-hamburger.png" alt="">
+                    <span>Special Cheese Burger</span>
+                    <span class="special-arrow">></span>
+                </div>
+                <div class="images-minik">
+                    <img src="img/minik-hamburger.png" alt="">
+                    <span>Special Cheese Burger</span>
+                    <span class="special-arrow">></span>
+                </div>
+                <div class="images-minik">
+                    <img src="img/minik-hamburger.png" alt="">
+                    <span>Special Cheese Burger</span>
+                    <span class="special-arrow">></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="images-icerik background white-text about">
+            <h1>Rotante Hakkında</h1>
+            <div>
+                Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum sit amet, consected
+                elit sad ıpsumed Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum
+                sit amet, consected elit sad ıpsumed
+            </div>
+
+            <button class="white-text detayli-bilgi">Detaylı Bilgi</button>
+        </div>
+
+        <div class="images-icerik">
+            <img class="restorant" src="img/restorant.png" alt="">
+        </div>
+    </div>
+
+    <div class="blog container text-center">
+        <h1 class="blog-text">Blog</h1>
+
+        <div class="slick2">
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc2.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc2.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc2.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc2.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick2-icerik">
+                <div>
+                    <img src="img/kfc.png" alt="">
+                </div>
+
+                <div>
+                    <div class="tarih text-start">
+                        31.03.2023
+                    </div>
+                    <div class="desc text-start">
+                        Lorem Ipsum sit amet, consected elit
+                        sad ıpsumed Ipsum sit amet, consected
+                    </div>
+                    <hr>
+
+                    <div class="blog-detayli-bilgi">
+                        <button>Detaylı Bilgi</button>
+
+                        <div class="profile">
+                            <div>
+                                <img src="img/profile.png" alt="">
+                            </div>
+                            <div>Karahan D.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('#menuler1').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //         breakpoint: 992,
+            //         settings: {
+            //             arrows: false,
+            //             dots: false
+            //         }
+            //     }
+            // ]
+        });
+
+        $('.slick').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            // responsive: [
+            //     {
+            //         breakpoint: 992,
+            //         settings: {
+            //             arrows: false,
+            //             dots: false
+            //         }
+            //     }
+            // ]
+        });
+
+        $('.slick2').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: true,
+            // responsive: [
+            //     {
+            //         breakpoint: 992,
+            //         settings: {
+            //             arrows: false,
+            //             dots: false
+            //         }
+            //     }
+            // ]
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

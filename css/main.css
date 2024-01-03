@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background {
+    background: url(../img/background.png);
+    background-color: #2D2D2D;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-relative {
+    position: relative;
+    width: 100%;
+}
+
+.container-absolute {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    top: 175px;
+    right: 0;
+}
+
+.container-absolute2 {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    z-index: 2;
+}
+
+.container-absolute3 {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    top: 100px;
+    right: 0;
+}
+
+.menuler-absolute {
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+
+.el-hamburger {
+    width: 80%;
+}
+
+.cheese-burger {
+    width: 90%;
+}
+
+header {
+    background-color: #111111;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+header ul li {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a {
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover:not(.search-icon) {
+    color: #FFE700;
+}
+
+.menuler {
+    position: absolute;
+}
+
+#menuler1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #111111;
+}
+
+#hamburger-menu {
+    position: absolute;
+    background-color: #111111;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+
+.hamburger-img {
+    width: 100%;
+}
+
+.lezzet:hover a {
+    color: #FFE700;
+}
+
+.search-icon {
+    padding: 0.75rem;
+    color: white;
+    background-color: #707070;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.language-icon {
+    padding: 0.75rem;
+    background-color: #DB0617;
+    border-radius: 10px;
+}
+
+.active-a {
+    color: #FFE700;
+}
+
+.div-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-1-text {
+    display: inline-flex;
+    align-items: center;
+    height: calc(100vh - 85px);
+}
+
+.yellow-text {
+    color: #FFE700;
+}
+
+.red-text {
+    color: red;
+}
+
+.white-text {
+    color: white;
+}
+
+.small-text {
+    font-size: 1.25rem;
+}
+
+.mid-text {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.big-text {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.detayli-bilgi {
+    text-decoration: underline;
+}
+
+.hamburger-container {
+    top: 100px;
+    display: flex;
+    font-size: 6.75rem;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.hamburger-yazilari {
+    display: flex;
+    align-items: center;
+    color: #2D2D2D;
+    margin-top: 1rem;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.sol-ok-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 25.5px;
+    padding: 0.5rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.scooter-icon {
+    position: absolute;
+    right: 14rem;
+    top: 25px;
+    padding: 0.1rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.siparis {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    top: 1rem;
+    height: 100px;
+    background-color: red;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.container-absolute2-yazilar {
+    width: 120px;
+    position: absolute;
+    top: 2.5rem;
+    right: 6rem;
+    z-index: 3;
+}
+
+.hemen {
+    font-size: 0.75rem;
+}
+
+.siparis-ver {
+    font-size: 1.25rem;
+}
+
+.phone-number {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.deactive {
+    display: none !important;
+}
+
+.menu1 {
+    width: auto !important;
+    background-color: #2D2D2D;
+    margin: 0 0.5rem;
+    transition: all 0.5s;
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+.menu1:hover {
+    background-color: yellow;
+}
+
+.menu-text {
+    margin: 1rem;
+}
+
+.slick-prev:before {
+    content: "<";
+    opacity: 1;
+    font-family: none;
+}
+
+.slick-next:before {
+    content: ">";
+    opacity: 1;
+    font-family: none;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 1rem;
+    color: yellow;
+}
+
+.slick-dots li {
+    margin: 0 0.5rem;
+}
+
+.slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+
+.slick-dots li button:hover {
+    border-radius: 50%;
+
+    border: 2px solid yellow;
+}
+
+.slick-dots>.slick-active {
+    background: yellow;
+
+    border-radius: 100%;
+}
+
+.slick-dots li button:before {
+    font-family: none;
+    font-size: 0;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.special-burgers {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 1rem;
+}
+
+.special-flex {
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.special-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-red {
+    background-color: red;
+}
+
+.background-yellow {
+    background-color: #FFCC00;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restorant {
+    width: 100%;
+    height: 433px;
+}
+
+.kampanya {
+    margin: 2.5rem;
+}
+
+.images-icerik {
+    width: 50%;
+    height: 433px;
+}
+
+.images-minik {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.special-arrow {
+    font-size: 2rem;
+    padding: 0 1.75rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+}
+
+.special-arrow:hover {
+    background-color: red;
+    color: white;
+}
+
+.about {
+    padding: 7.5rem 2.5rem;
+}
+
+.about * {
+    margin: 0.5rem;
+}
+
+.detayli-bilgi {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+
+.detayli-bilgi:hover {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+}
+
+.blog-detayli-bilgi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-detayli-bilgi button {
+    background-color: red;
+    padding: 1rem 2rem;
+    border: 1px solid red;
+    outline: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+
+.blog-detayli-bilgi button:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+.blog-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.slick2 {
+    gap: 2rem;
+}
+
+.slick2>.slick-dots {
+    bottom: -5rem;
+    color: red;
+}
+
+.slick2>.slick-dots li button {
+    border: 2px solid red;
+}
+
+.slick2>.slick-dots li button:hover {
+    border: 2px solid red;
+}
+
+.slick2>.slick-dots>.slick-active {
+    background: red;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.slick2-icerik hr {
+    margin: 1rem 0;
+}
+
+.tarih {
+    margin: 1rem 0;
+}
