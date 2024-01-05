@@ -21,11 +21,6 @@
     zoom: 1;
 }
 
-.musterilerin-yorumlari {
-    justify-content: center;
-    flex-direction: column;
-}
-
 .musteri-yorumu {
     margin: 1rem;
 }
@@ -47,7 +42,7 @@
 }
 
 .div-1-text {
-    height: calc((100vh - 85px) - 69vw);
+    height: calc((100vh - 85px) - 71vw);
 }
 
 .el-hamburger {

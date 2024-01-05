@@ -374,6 +374,11 @@ header>div {
     gap: 0 1rem;
 }
 
+.special-burger {
+    display: flex;
+    align-items: center;
+}
+
 .special-flex {
     display: flex;
     padding: 1rem;
@@ -427,7 +432,6 @@ header>div {
 .special-arrow {
     font-size: 2rem;
     padding: 0 1.75rem;
-    margin-left: 10rem;
     border-radius: 1rem;
 }
 
@@ -550,6 +554,10 @@ header>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.musterilerin-yorumlari .slick-dots {
+    bottom: -1rem;
 }
 
 .musteri-yorumu {
@@ -701,4 +709,12 @@ footer ul li a:hover {
 
 .blog-detayli-bilgi {
     gap: 0.5rem;
+}
+
+.images-minik {
+    justify-content: space-between;
+}
+
+.stars {
+    display: flex;
 }

@@ -15,7 +15,7 @@
 }
 
 .minik2-hamburger {
-    display: none;
+    display: none !important;
 }
 
 .musteri-yorumu {

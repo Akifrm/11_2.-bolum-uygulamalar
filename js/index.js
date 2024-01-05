@@ -58,6 +58,36 @@ $('.slick2').slick({
     ]
 });
 
+$('.musterilerin-yorumlari').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 881,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
+
+window.addEventListener('resize', (e) => {
+    $('.musterilerin-yorumlari').slick("refresh");
+});
+
+
 let first = true;
 function menuOpen() {
     const menuler = document.getElementById('menuler');
