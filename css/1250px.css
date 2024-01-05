@@ -1,0 +1,27 @@
+.el-hamburger {
+    width: 65%;
+}
+
+.cheese-burger {
+    width: 70%;
+}
+
+.container-absolute {
+    top: 275px;
+}
+
+.container-absolute3 {
+    top: 200px;
+}
+
+.hamburger-container {
+    top: 200px;
+}
+
+.hamburger-yazilari {
+    font-size: 5rem;
+}
+
+#menuler1 {
+    margin: 0 3rem;
+}

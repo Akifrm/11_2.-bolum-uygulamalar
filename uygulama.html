@@ -23,13 +23,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width: 1250px)" href="css/1250px.css">
+    <link rel="stylesheet" media="(max-width: 1100px)" href="css/1100px.css">
+    <link rel="stylesheet" media="(max-width: 1023px)" href="css/1023px.css">
+    <link rel="stylesheet" media="(max-width: 880px)" href="css/880px.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/768px.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/500px.css">
+    <link rel="stylesheet" media="(max-width: 380px)" href="css/380px.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <img class="logo-img" src="img/logo.png" alt="">
             </div>
 
             <div class="menu">
@@ -44,9 +51,20 @@
                     </li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">İLETİŞİM</a></li>
-                    <li><a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="" class="language-icon"><img src="img/language-icon.png" alt=""></a></li>
+                    <li>
+                        <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="search-text">SEARCH</a>
+                    </li>
+                    <li>
+                        <a href="#" class="language-icon"><img src="img/language-icon.png" alt=""></a>
+                        <a href="#" class="language-text">LANGUAGE</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="buttons">
+                <i onclick="menu()" class="active click buttons-button menu-button fa-solid fa-bars"></i>
+                <i onclick="menuClose()" class="click buttons-button menu-button-x fa-solid fa-x"
+                    style="padding: 0 3px;"></i>
             </div>
         </div>
     </header>
@@ -113,7 +131,7 @@
                         <div class="hamburger-yazilari" style="opacity: .55;">HAMBURGER</div>
                     </div>
                 </div>
-                <div class="container-absolute">
+                <div class="container-absolute container-absolute-1">
                     <img class="el-hamburger" src="img/el-hamburger.png" alt="">
                 </div>
             </div>
@@ -122,24 +140,28 @@
                 <div class="container">
                     <div class="div-1-text">
                         <div>
-                            <div class="yellow-text small-text">
+                            <div class="yellow-text small-text text-word-break">
                                 En Çok Satılan
                             </div>
-                            <div class="red-text mid-text">
+                            <div class="red-text mid-text text-word-break">
                                 SUPER
                             </div>
-                            <div class="white-text big-text">
+                            <div class="white-text big-text text-word-break">
                                 BURGER
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container-absolute">
+                <img class="el-hamburger" src="img/el-hamburger.png" alt="">
+            </div>
         </div>
 
         <div>
             <div class="container-relative">
-                <div class="container-absolute3">
+                <div class="container-absolute3 container-absolute-1">
                     <img class="cheese-burger" src="img/cheese-burger.png" alt="">
                 </div>
             </div>
@@ -148,18 +170,22 @@
                 <div class="container">
                     <div class="div-1-text">
                         <div>
-                            <div class="white-text small-text">
+                            <div class="white-text small-text text-word-break">
                                 En Popüler
                             </div>
-                            <div class="yellow-text big-text">
+                            <div class="yellow-text big-text text-word-break">
                                 Cheese
                             </div>
-                            <div class="white-text big-text">
+                            <div class="white-text big-text text-word-break">
                                 Burger
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="container-absolute3">
+                <img class="cheese-burger" src="img/cheese-burger.png" alt="">
             </div>
         </div>
 
@@ -173,7 +199,7 @@
                         <div class="hamburger-yazilari" style="opacity: .55;">HAMBURGER</div>
                     </div>
                 </div>
-                <div class="container-absolute">
+                <div class="container-absolute container-absolute-1">
                     <img class="el-hamburger" src="img/el-hamburger.png" alt="">
                 </div>
 
@@ -184,18 +210,22 @@
                 <div class="container">
                     <div class="div-1-text">
                         <div>
-                            <div class="yellow-text small-text">
+                            <div class="yellow-text small-text text-word-break">
                                 En Çok Satılan
                             </div>
-                            <div class="red-text mid-text">
+                            <div class="red-text mid-text text-word-break">
                                 SUPER
                             </div>
-                            <div class="white-text big-text">
+                            <div class="white-text big-text text-word-break">
                                 BURGER
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="container-absolute">
+                <img class="el-hamburger" src="img/el-hamburger.png" alt="">
             </div>
         </div>
     </div>
@@ -206,7 +236,7 @@
                 <div class="special-text">
                     <div class="white-text">Special Cheese Burger</div>
                     <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
-                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                    <a href="" class="detayli-bilgi-special">Detaylı Bilgi</a>
                 </div>
                 <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
             </div>
@@ -214,7 +244,7 @@
                 <div class="special-text">
                     <div class="white-text">Special Cheese Burger</div>
                     <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
-                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                    <a href="" class="detayli-bilgi-special">Detaylı Bilgi</a>
                 </div>
                 <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
             </div>
@@ -222,7 +252,7 @@
                 <div class="special-text">
                     <div class="white-text">Special Cheese Burger</div>
                     <div class="white-text">Bu Haftaya Özel %20 Daire İndirimi Alın</div>
-                    <a href="" class="detayli-bilgi">Detaylı Bilgi</a>
+                    <a href="" class="detayli-bilgi-special">Detaylı Bilgi</a>
                 </div>
                 <img class="hamburger-yarim" src="img/hamburger-yarim.png" alt="">
             </div>
@@ -230,7 +260,7 @@
     </div>
 
     <div class="images">
-        <div class="images-icerik">
+        <div class="images-icerik resimli-icerik">
             <img class="restorant" src="img/menu.png" alt="">
         </div>
         <div class="images-icerik">
@@ -266,7 +296,7 @@
             <button class="white-text detayli-bilgi">Detaylı Bilgi</button>
         </div>
 
-        <div class="images-icerik">
+        <div class="images-icerik resimli-icerik">
             <img class="restorant" src="img/restorant.png" alt="">
         </div>
     </div>
@@ -277,12 +307,16 @@
         <div class="slick2">
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc.png" alt="">
+                    <img class="kfc" src="img/kfc.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -304,12 +338,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc2.png" alt="">
+                    <img class="kfc" src="img/kfc2.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -331,12 +369,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc.png" alt="">
+                    <img class="kfc" src="img/kfc.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -358,12 +400,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc2.png" alt="">
+                    <img class="kfc" src="img/kfc2.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -385,12 +431,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc.png" alt="">
+                    <img class="kfc" src="img/kfc.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -412,12 +462,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc2.png" alt="">
+                    <img class="kfc" src="img/kfc2.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -439,12 +493,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc.png" alt="">
+                    <img class="kfc" src="img/kfc.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -466,12 +524,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc2.png" alt="">
+                    <img class="kfc" src="img/kfc2.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -493,12 +555,16 @@
             </div>
             <div class="slick2-icerik">
                 <div>
-                    <img src="img/kfc.png" alt="">
+                    <img class="kfc" src="img/kfc.png" alt="">
                 </div>
 
                 <div>
-                    <div class="tarih text-start">
-                        31.03.2023
+                    <div class="tarih text-start container-relative">
+                        <img class="saat" src="img/saat.png" alt="">
+                        <div class="container-absolute4">
+                            <img src="img/saat-imleci.png" alt="">
+                        </div>
+                        <span class="saat-dijital">31.03.2023</span>
                     </div>
                     <div class="desc text-start">
                         Lorem Ipsum sit amet, consected elit
@@ -521,66 +587,199 @@
         </div>
     </div>
 
+
+    <div class="container-clear"></div>
+    <hr>
+    <div class="container-clear2"></div>
+    <div class="container">
+        <div class="text-center">
+            <h1>MÜŞTERİ YORUMLARI</h1>
+        </div>
+        <div class="container-clear2"></div>
+
+        <div class="musterilerin-yorumlari">
+            <div class="musteri-yorumu arkadaki-musteri-yorumu">
+                <div class="musteri-yorumu-margin">
+                    <img src="img/quotation-mark.png" alt="">
+                </div>
+                <div class="musteri-yorumu-margin">
+                    Lorem Ipsum sit amet, consected elit sad ıpsum Ipsum sit amet, consected elit sad ıpsumed elit
+                    ıpsumed
+                </div>
+
+                <div class="stars musteri-yorumu-margin">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img class="son-star" src="img/star.png" alt="">
+                </div>
+
+                <div>
+                    <div class="musteri-info">
+                        <img src="img/profile.png" alt="">
+                        <div>
+                            <div>Karahan D.</div>
+                            <div class="min-text opacity-text">Konum, Yer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-relative">
+                    <div class="container-absolute5">
+                        <img class="minik2-hamburger" src="img/hamburger.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="musteri-yorumu">
+                <div class="musteri-yorumu-margin">
+                    <img src="img/quotation-mark.png" alt="">
+                </div>
+                <div class="musteri-yorumu-margin">
+                    Lorem Ipsum sit amet, consected elit sad ıpsum Ipsum sit amet, consected elit sad ıpsumed elit
+                    ıpsumed
+                </div>
+
+                <div class="stars musteri-yorumu-margin">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img class="son-star" src="img/star.png" alt="">
+                </div>
+
+                <div>
+                    <div class="musteri-info">
+                        <img src="img/profile.png" alt="">
+                        <div>
+                            <div>Karahan D.</div>
+                            <div class="min-text opacity-text">Konum, Yer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-relative">
+                    <div class="container-absolute5">
+                        <img class="minik2-hamburger" src="img/hamburger.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="musteri-yorumu arkadaki-musteri-yorumu">
+                <div class="musteri-yorumu-margin">
+                    <img src="img/quotation-mark.png" alt="">
+                </div>
+                <div class="musteri-yorumu-margin">
+                    Lorem Ipsum sit amet, consected elit sad ıpsum Ipsum sit amet, consected elit sad ıpsumed elit
+                    ıpsumed
+                </div>
+
+                <div class="stars musteri-yorumu-margin">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img class="son-star" src="img/star.png" alt="">
+                </div>
+
+                <div class="musteri-yorumu-margin">
+                    <div class="musteri-info">
+                        <img src="img/profile.png" alt="">
+                        <div>
+                            <div>Karahan D.</div>
+                            <div class="min-text opacity-text">Konum, Yer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-relative">
+                    <div class="container-absolute5">
+                        <img class="minik2-hamburger" src="img/hamburger.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-clear2"></div>
+
+    <footer class="background">
+        <div class="container">
+            <div class="footer-icerik logolu-icerik">
+                <div class="margin-bottom">
+                    <img class="logo-img" src="img/logo.png" alt="">
+                </div>
+                <div class="margin-bottom">
+                    Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum sit amet, consected ıpsumed Ipsum sit amet
+                </div>
+
+                <div class="social">
+                    <i class="social-icon fa-brands fa-instagram"></i>
+                    <i class="social-icon fa-brands fa-x-twitter"></i>
+                    <i class="social-icon fa-brands fa-facebook-f"></i>
+                </div>
+            </div>
+
+            <div class="footer-icerik">
+                <h2 class="white-text baslik">Kurumsal</h2>
+
+                <ul class="white-text">
+                    <li><a href="#">Ansayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Hizmetlerimiz</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-icerik">
+                <h2 class="white-text baslik">Lezzetler</h2>
+
+                <ul class="white-text">
+                    <li><a href="#">Rotante olarak</a></li>
+                    <li><a href="#">Çıtır tavuk (fc)</a></li>
+                    <li><a href="#">Hamburger</a></li>
+                    <li><a href="#">Tacos</a></li>
+                    <li><a href="#">Makarna</a></li>
+                    <li><a href="#">Kore usulü pilav</a></li>
+                    <li><a href="#">Soğan halkası</a></li>
+                    <li><a href="#">Peynir çubukları</a></li>
+                    <li><a href="#">Patates</a></li>
+                    <li><a href="#">Çorba</a></li>
+                    <li><a href="#">Su</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-icerik">
+                <h2 class="white-text baslik">Bizimle İletişime Geçin</h2>
+
+                <ul>
+                    <li class="adres">
+                        <div class="İletisim fa-solid fa-location-dot"></div>
+                        <div class="white-text">
+                            <a href="#">Aşıq Molla Cümə küçəsi 46 E Narimano /Baku Azerbaycan</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="İletisim fa-solid fa-phone"></i>
+                        <a href="tel:+90123456789" class="white-text">+90 123 456 789</a>
+                    </li>
+                    <li>
+                        <i class="İletisim fa-solid fa-phone"></i>
+                        <a href="tel:+90123456789" class="white-text">+90 123 456 789</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="white-text text-center copyright">
+            @ All Copyright 2024 By Rotante.com
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        $('#menuler1').slick({
-            infinite: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            // responsive: [
-            //     {
-            //         breakpoint: 992,
-            //         settings: {
-            //             arrows: false,
-            //             dots: false
-            //         }
-            //     }
-            // ]
-        });
-
-        $('.slick').slick({
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            // responsive: [
-            //     {
-            //         breakpoint: 992,
-            //         settings: {
-            //             arrows: false,
-            //             dots: false
-            //         }
-            //     }
-            // ]
-        });
-
-        $('.slick2').slick({
-            infinite: true,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            arrows: false,
-            dots: true,
-            // responsive: [
-            //     {
-            //         breakpoint: 992,
-            //         settings: {
-            //             arrows: false,
-            //             dots: false
-            //         }
-            //     }
-            // ]
-        });
-    </script>
     <script src="js/index.js"></script>
 </body>
 

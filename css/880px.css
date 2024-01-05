@@ -1,0 +1,59 @@
+.special-burgers {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.special-flex {
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.images-icerik {
+    width: 630px;
+    margin: 0.5rem auto;
+}
+
+.arkadaki-musteri-yorumu {
+    opacity: 1;
+    zoom: 1;
+}
+
+.musterilerin-yorumlari {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.musteri-yorumu {
+    margin: 1rem;
+}
+
+.container-absolute {
+    position: static;
+}
+
+.container-absolute3 {
+    position: static;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.container-absolute-1 {
+    display: none;
+}
+
+.div-1-text {
+    height: calc((100vh - 85px) - 69vw);
+}
+
+.el-hamburger {
+    width: 100%;
+}
+
+.cheese-burger {
+    width: 100%;
+}

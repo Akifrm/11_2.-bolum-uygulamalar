@@ -1,3 +1,63 @@
+$('#menuler1').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
+});
+
+$('.slick').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    // responsive: [
+    //     {
+    //         breakpoint: 992,
+    //         settings: {
+    //             arrows: false,
+    //             dots: false
+    //         }
+    //     }
+    // ]
+});
+
+$('.slick2').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 881,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
+
 let first = true;
 function menuOpen() {
     const menuler = document.getElementById('menuler');
@@ -17,4 +77,34 @@ function menuOpen() {
         first = true;
         $('#menuler1').slick("refresh");
     }
+}
+
+function menu() {
+    const menu = document.getElementsByClassName('menu')[0];
+    const menu_button = document.getElementsByClassName('menu-button')[0];
+    const menu_button_x = document.getElementsByClassName('menu-button-x')[0];
+
+    menu_button.classList.remove('active');
+    menu_button_x.classList.add('active');
+    menu.classList.add('active');
+}
+
+function menuClose() {
+    const menu = document.getElementsByClassName('menu')[0];
+    const menu_button = document.getElementsByClassName('menu-button')[0];
+    const menu_button_x = document.getElementsByClassName('menu-button-x')[0];
+
+    menu_button.classList.add('active');
+    menu_button_x.classList.remove('active');
+    menu.classList.remove('active');
+
+    const menuler = document.getElementById('menuler');
+    const anasayfa = document.getElementById('anasayfa');
+    const lezzet = document.getElementById("lezzet");
+
+    menuler.classList.add('deactive');
+    anasayfa.classList.add('active-a');
+    lezzet.classList.remove('active-a');
+    first = true;
+    $('#menuler1').slick("refresh");
 }

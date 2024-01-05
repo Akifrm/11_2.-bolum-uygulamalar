@@ -1,0 +1,84 @@
+.menu {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background-color: #111111;
+    z-index: 20;
+    width: 100%;
+}
+
+.menu ul {
+    width: 100%;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    flex-direction: column;
+}
+
+header div {
+    height: auto;
+}
+
+.active,
+.buttons,
+.search-text,
+.language-text {
+    display: flex;
+}
+
+.search-icon,
+.language-icon {
+    display: none;
+}
+
+.slick2-icerik {
+    padding: 0.5rem;
+}
+
+#hamburger-menu {
+    top: 357px;
+}
+
+footer .container {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-icerik {
+    width: 50%;
+    margin: 1rem;
+}
+
+.logolu-icerik {
+    min-width: 270px;
+}
+
+.el-hamburger {
+    width: 50%;
+}
+
+.cheese-burger {
+    width: 60%;
+}
+
+.container-absolute {
+    top: 275px;
+}
+
+.container-absolute3 {
+    top: 275px;
+}
+
+.hamburger-container {
+    top: 250px;
+}
+
+.hamburger-yazilari {
+    font-size: 3rem;
+}

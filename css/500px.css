@@ -1,0 +1,44 @@
+.special-arrow {
+    display: none;
+}
+
+.images-minik {
+    justify-content: center;
+}
+
+.kampanya h1 {
+    text-align: center;
+}
+
+.special-flex {
+    width: 100%;
+}
+
+.hamburger-yarim {
+    width: 50%;
+}
+
+.restorant,
+.resimli-icerik {
+    display: none;
+}
+
+.big-text {
+    font-size: 4.75rem;
+}
+
+.mid-text {
+    font-size: 3rem;
+}
+
+.container-absolute {
+    margin-bottom: 150px;
+}
+
+.container-absolute3 {
+    margin-bottom: 150px;
+}
+
+.div-1-text {
+    height: calc((100vh - 85px) - 67vw - 150px);
+}
