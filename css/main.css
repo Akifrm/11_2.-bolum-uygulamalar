@@ -633,7 +633,7 @@ header>div {
 
 .musteri-yorumu {
     background-color: white;
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
     width: 350px;
     border-radius: 0.5rem;
 }
