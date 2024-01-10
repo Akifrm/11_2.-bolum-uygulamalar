@@ -25,6 +25,10 @@
     margin: 1rem;
 }
 
+.container-absolute {
+    margin-bottom: 20px;
+}
+
 .container-absolute3 {
     position: static;
 }
@@ -43,11 +47,11 @@
 }
 
 .el-hamburger {
-    width: 75%;
+    width: 55%;
 }
 
 .cheese-burger {
-    width: 100%;
+    width: 65%;
 }
 
 .div-1 {
@@ -66,4 +70,12 @@
 
 .kampanya {
     margin-left: 0;
+}
+
+.restorant {
+    width: 100%;
+}
+
+.container-absolute6 {
+    right: 0;
 }

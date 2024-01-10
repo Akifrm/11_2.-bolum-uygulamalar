@@ -1,9 +1,5 @@
-.logo {
-    width: 75%;
-}
-
 .logo-img {
-    width: 100%;
+    width: 200px;
 }
 
 .logolu-icerik {
@@ -23,11 +19,7 @@
 }
 
 .big-text {
-    font-size: 3.5rem;
-}
-
-.mid-text {
-    font-size: 2.25rem;
+    font-size: 4rem;
 }
 
 .text-word-break {
@@ -41,5 +33,9 @@
 }
 
 .div-1 {
-    height: calc(100vh - 48px);
+    height: calc(100vh - 68.5px);
+}
+
+.menu {
+    top: 67.7px;
 }

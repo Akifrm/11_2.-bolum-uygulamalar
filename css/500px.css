@@ -32,7 +32,7 @@
 }
 
 .container-absolute {
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 
 .container-absolute3 {
@@ -46,4 +46,12 @@
 .musteri-text-shadow {
     font-size: 2rem;
     right: calc(50% - 161.5px);
+}
+
+.el-hamburger {
+    width: 100%;
+}
+
+.cheese-burger {
+    width: 100%;
 }

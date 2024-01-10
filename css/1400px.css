@@ -1,3 +1,11 @@
 .container {
     margin: 0 1rem;
 }
+
+.fa-angle-left {
+    left: 2.5rem;
+}
+
+.fa-angle-right {
+    right: 2.5rem;
+}

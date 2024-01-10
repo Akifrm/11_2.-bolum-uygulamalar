@@ -9,3 +9,7 @@
 .cheese-burger {
     width: 75%;
 }
+
+#hamburger-menu .fa-solid {
+    display: none;
+}

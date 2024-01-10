@@ -1,7 +1,7 @@
 .menu {
     display: none;
     position: absolute;
-    top: 66px;
+    top: 85px;
     right: 0;
     background-color: #111111;
     z-index: 20;
@@ -24,11 +24,6 @@ header ul {
 header div {
     height: auto;
 }
-
-.div-1 {
-    height: calc(100vh - 66px);
-}
-
 .active,
 .buttons,
 .search-text,
@@ -74,4 +69,13 @@ footer .container {
 
 .cheese-burger {
     width: 50%;
+}
+
+.logo {
+    padding: 9.5px 0;
+}
+
+.background2 {
+    background-repeat: repeat;
+    background-size: contain;
 }

@@ -3,9 +3,11 @@ $('#menuler1').slick({
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    prevArrow: $('.fa-angle-left'),
+    nextArrow: $('.fa-angle-right'),
     responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1250,
             settings: {
                 slidesToShow: 3,
                 arrows: false
@@ -21,17 +23,8 @@ $('.slick').slick({
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-    // responsive: [
-    //     {
-    //         breakpoint: 992,
-    //         settings: {
-    //             arrows: false,
-    //             dots: false
-    //         }
-    //     }
-    // ]
+    autoplay: true,
+    autoplaySpeed: 5000,
 });
 
 $('.slick2').slick({
@@ -43,7 +36,7 @@ $('.slick2').slick({
     dots: true,
     responsive: [
         {
-            breakpoint: 995,
+            breakpoint: 940,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -84,24 +77,22 @@ $('.musterilerin-yorumlari').slick({
     ]
 });
 
-let last;
 let first = true;
 window.addEventListener('resize', (e) => {
     $('.musterilerin-yorumlari').slick("refresh");
     $('.slick2').slick("refresh");
-    console.log(last, last >= 1000, document.body.clientWidth > 1000)
-    if (last >= 1000 && document.body.clientWidth >= 1000) {
+
+    if (document.body.clientWidth <= 1024) {
         const menuler = document.getElementById('menuler');
         const anasayfa = document.getElementById('anasayfa');
         const lezzet = document.getElementById("lezzet")
-        
+
         anasayfa.classList.add('active-a');
         lezzet.classList.remove('active-a');
         menuler.classList.add('deactive');
         first = true;
-        
+
     }
-    last = document.body.clientWidth;
 });
 
 
@@ -154,3 +145,18 @@ function menuClose() {
     first = true;
     $('#menuler1').slick("refresh");
 }
+
+$('.slick').mouseover(() => {
+	$('.siparis').css('display', 'flex');
+    $('.container-absolute2-yazilar').css('display', 'block');
+});
+
+$('.siparis').mouseover(() => {
+	$('.siparis').css('display', 'flex');
+    $('.container-absolute2-yazilar').css('display', 'block');
+});
+
+$('.slick').mouseout(() => {
+	$('.siparis').css('display', 'none');
+    $('.container-absolute2-yazilar').css('display', 'none');
+});
