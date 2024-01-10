@@ -43,14 +43,14 @@ $('.slick2').slick({
     dots: true,
     responsive: [
         {
-            breakpoint: 881,
+            breakpoint: 995,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 690,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

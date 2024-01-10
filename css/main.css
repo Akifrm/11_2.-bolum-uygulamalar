@@ -633,7 +633,7 @@ header>div {
 
 .musteri-yorumu {
     background-color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
     width: 350px;
     border-radius: 0.5rem;
 }
@@ -643,6 +643,7 @@ header>div {
 }
 
 .arkadaki-musteri-yorumu {
+    align-self: center;
     opacity: .8;
     zoom: .8;
 }
@@ -812,3 +813,12 @@ footer ul li a:hover {
 .text-break {
     word-break: break-all;
 }
+
+.musterilerin-yorumlari .slick-list {
+    margin: 0 -1rem;
+}
+
+.musterilerin-yorumlari .slick-slide  {
+    margin: 0 1rem;
+}
+
