@@ -526,7 +526,7 @@ header>div {
     gap: 0.5rem;
 }
 
-.blog-detayli-bilgi button {
+.blog-detayli-bilgi a {
     background-color: red;
     padding: 0.5rem 1rem;
     border: 1px solid red;
@@ -536,7 +536,7 @@ header>div {
 }
 
 
-.blog-detayli-bilgi button:hover {
+.blog-detayli-bilgi a:hover {
     background-color: white;
     color: red;
 }
