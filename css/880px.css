@@ -76,6 +76,10 @@
     width: 100%;
 }
 
+.about {
+    width: 100% !important;
+}
+
 .container-absolute6 {
     right: 0;
 }
