@@ -13,7 +13,7 @@
 
 .images-icerik {
     width: 630px;
-    margin: 0.5rem auto;
+    margin: 0 auto;
 }
 
 .arkadaki-musteri-yorumu {
@@ -23,10 +23,6 @@
 
 .musteri-yorumu {
     margin: 1rem;
-}
-
-.container-absolute {
-    position: static;
 }
 
 .container-absolute3 {
@@ -41,14 +37,32 @@
     display: none;
 }
 
-.div-1-text {
-    height: calc((100vh - 85px) - 71vw);
+.container-absolute-2 {
+    display: flex;
+    bottom: 0;
 }
 
 .el-hamburger {
-    width: 100%;
+    width: 75%;
 }
 
 .cheese-burger {
     width: 100%;
+}
+
+.div-1 {
+    align-items: flex-start;
+}
+
+.resimli-icerik {
+    display: flex;
+    width: 75%;
+}
+
+.images-icerik {
+    width: 75%;
+}
+
+.kampanya {
+    margin-left: 0;
 }

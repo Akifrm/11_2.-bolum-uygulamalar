@@ -7,7 +7,8 @@ $('#menuler1').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
+                arrows: false
             }
         }
     ]
@@ -20,8 +21,8 @@ $('.slick').slick({
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
     // responsive: [
     //     {
     //         breakpoint: 992,
@@ -83,12 +84,27 @@ $('.musterilerin-yorumlari').slick({
     ]
 });
 
+let last;
+let first = true;
 window.addEventListener('resize', (e) => {
     $('.musterilerin-yorumlari').slick("refresh");
+    $('.slick2').slick("refresh");
+    console.log(last, last >= 1000, document.body.clientWidth > 1000)
+    if (last >= 1000 && document.body.clientWidth >= 1000) {
+        const menuler = document.getElementById('menuler');
+        const anasayfa = document.getElementById('anasayfa');
+        const lezzet = document.getElementById("lezzet")
+        
+        anasayfa.classList.add('active-a');
+        lezzet.classList.remove('active-a');
+        menuler.classList.add('deactive');
+        first = true;
+        
+    }
+    last = document.body.clientWidth;
 });
 
 
-let first = true;
 function menuOpen() {
     const menuler = document.getElementById('menuler');
     const anasayfa = document.getElementById('anasayfa');

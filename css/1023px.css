@@ -1,7 +1,7 @@
 .menu {
     display: none;
     position: absolute;
-    top: 85px;
+    top: 66px;
     right: 0;
     background-color: #111111;
     z-index: 20;
@@ -23,6 +23,10 @@ header ul {
 
 header div {
     height: auto;
+}
+
+.div-1 {
+    height: calc(100vh - 66px);
 }
 
 .active,
@@ -59,26 +63,15 @@ footer .container {
     min-width: 270px;
 }
 
+.hamburger-yazilari {
+    font-size: 3.5rem;
+}
+
 .el-hamburger {
     width: 50%;
 }
 
+
 .cheese-burger {
-    width: 60%;
-}
-
-.container-absolute {
-    top: 275px;
-}
-
-.container-absolute3 {
-    top: 275px;
-}
-
-.hamburger-container {
-    top: 250px;
-}
-
-.hamburger-yazilari {
-    font-size: 3rem;
+    width: 50%;
 }

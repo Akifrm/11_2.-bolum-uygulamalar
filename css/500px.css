@@ -42,3 +42,8 @@
 .div-1-text {
     height: calc((100vh - 85px) - 67vw - 150px);
 }
+
+.musteri-text-shadow {
+    font-size: 2rem;
+    right: calc(50% - 161.5px);
+}

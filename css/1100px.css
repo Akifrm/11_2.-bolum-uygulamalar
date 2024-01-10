@@ -1,3 +1,15 @@
-.container {
-    margin: 0 1rem;
+.container-flex {
+    margin: 0;
+}
+
+.hamburger-yazilari {
+    font-size: 4.75rem;
+}
+
+.el-hamburger {
+    width: 65%;
+}
+
+.cheese-burger {
+    width: 65%;
 }
