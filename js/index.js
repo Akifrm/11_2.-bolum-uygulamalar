@@ -91,7 +91,6 @@ window.addEventListener('resize', (e) => {
         lezzet.classList.remove('active-a');
         menuler.classList.add('deactive');
         first = true;
-
     }
 });
 
@@ -147,16 +146,18 @@ function menuClose() {
 }
 
 $('.slick').mouseover(() => {
-	$('.siparis').css('display', 'flex');
+    if (document.body.clientWidth + 10 < 700) return;
+    $('.siparis').css('display', 'flex');
     $('.container-absolute2-yazilar').css('display', 'block');
 });
 
 $('.siparis').mouseover(() => {
-	$('.siparis').css('display', 'flex');
+    if (document.body.clientWidth + 10 < 700) return;
+    $('.siparis').css('display', 'flex');
     $('.container-absolute2-yazilar').css('display', 'block');
 });
 
 $('.slick').mouseout(() => {
-	$('.siparis').css('display', 'none');
+    $('.siparis').css('display', 'none');
     $('.container-absolute2-yazilar').css('display', 'none');
 });

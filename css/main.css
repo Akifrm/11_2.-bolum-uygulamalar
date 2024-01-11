@@ -211,6 +211,12 @@ header>div {
     width: 100%;
 }
 
+.hamburger-yarim {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
 .lezzet:hover a {
     color: #FFE700;
 }
